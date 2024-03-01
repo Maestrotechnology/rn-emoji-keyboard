@@ -167,7 +167,8 @@ export const EmojiCategory = React.memo(
       }
     }, [activeCategoryIndex, title])
 
-    const flatListData = data.slice(0, maxIndex)
+    // const flatListData = data.slice(0, maxIndex)
+     const flatListData = [...data]
 
     return (
       <View style={[styles.container, { width }]}>
